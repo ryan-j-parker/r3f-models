@@ -20,7 +20,8 @@ export default function CardboardBox(props) {
           dispose={null} 
           ref={boxRef}
           position-z={-5.5}
-          position-y={-5}
+          position-y={1}
+          position-x={6.2}
         >
           <mesh
             castShadow

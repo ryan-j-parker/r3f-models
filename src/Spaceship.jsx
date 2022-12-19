@@ -7,16 +7,18 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 export default function Spaceship(props) {
   const { nodes, materials } = useGLTF('/spaceship/scene.gltf');
   const model = useLoader(GLTFLoader, '/spaceship/scene.gltf');
-  // console.log('Cardboard box nodes: ', model.nodes);
+  console.log(model, model.nodes);
 
   return (
     <group 
       {...props} 
       dispose={null}
-      scale={2}
+      scale={0.2}
+      position-y={3}
+      position-z={-5}
+      opacity={1}
     >
-      {/* <mesh castShadow receiveShadow /> */}
-      <primitive object={model} />
+      <primitive object={model.scene} />
     </group>
   );
 }

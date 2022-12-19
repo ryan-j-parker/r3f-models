@@ -17,10 +17,11 @@ export default function Sofa(props) {
       {...props} 
       dispose={null}
       ref={sofaRef}
-      position-x={2}
-      position-y={-1}
-      position-z={-2}
-      scale={3}
+      position-x={-2.2}
+      position-y={-1.99}
+      position-z={-4}
+      rotation-y={0.5}
+      scale={3.9}
     >
       <mesh
         name="sofaBase" 
