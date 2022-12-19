@@ -13,6 +13,7 @@ import Floor from './Floor';
 import Console from './Console';
 import Barber from './Barber';
 import PottedHerb from './PottedHerb';
+import Walls from './Walls';
 
 export default function Experience() {
   return (
@@ -39,6 +40,7 @@ export default function Experience() {
         <Lighting />
         <PottedHerb />
         <CardboardBox />
+        <Walls />
         {/* <rectAreaLight args={['#03ccda', 3, 2, 2]} position={[2, 2, 2]} /> */}
         {/* <hemisphereLight args={['#ec17ff', '#03da47', 4]} position={[-3, 0, -2]} /> */}
         <OrbitControls />
