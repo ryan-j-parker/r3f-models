@@ -14,8 +14,10 @@ export default function Spaceship(props) {
       {...props} 
       dispose={null}
       scale={0.2}
-      position-y={3}
+      position-x={5}
+      position-y={6}
       position-z={-5}
+      rotation-y={-0.5}
       opacity={1}
     >
       <primitive object={model.scene} />

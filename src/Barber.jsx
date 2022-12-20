@@ -12,7 +12,7 @@ export default function Barber() {
       position-x={-5.2}
       position-z={5.4}
       rotation-y={2.2}
-      scale={3.5}
+      scale={4.5}
     >
       <mesh
         castShadow

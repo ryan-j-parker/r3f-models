@@ -3,6 +3,7 @@ import { useTexture } from '@react-three/drei';
 import React from 'react';
 import { useRef } from 'react';
 import { DoubleSide } from 'three';
+import Painting from './Painting';
 
 export default function Walls() {
   const props = useTexture({
@@ -30,12 +31,12 @@ export default function Walls() {
       <mesh
         castShadow
         receiveShadow
-        position-x={-1.55}
+        position-x={-1.575}
         position-y={1.1}
-        position-z={0}
-        rotation-y={1.59}
+        position-z={-0.05}
+        rotation-y={Math.PI * -0.5}
       >
-        <boxGeometry args={[2.9, 3, 0.25]} />
+        <boxGeometry args={[3, 3, 0.25]} />
         <meshStandardMaterial
           {...props}
           attach="material"
@@ -47,12 +48,28 @@ export default function Walls() {
       <mesh
         castShadow
         receiveShadow
-        position-x={0}
+        position-x={-0.0475}
         position-y={1.1}
-        position-z={-1.55}
-        rotation-y={3.14}
+        position-z={-1.58}
+        rotation-z={Math.PI * -0.5}
       >
-        <boxGeometry args={[2.9, 3, 0.25]} />
+        <boxGeometry args={[3, 3, 0.25]} />
+        <meshStandardMaterial
+          {...props}
+          attach="material"
+          displacementScale={0}
+          side={DoubleSide}
+        />
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        position-x={-0.0475}
+        position-y={2.725}
+        position-z={-0.05}
+        rotation-x={Math.PI * -0.5}
+      >
+        <boxGeometry args={[3, 3, 0.25]} />
         <meshStandardMaterial
           {...props}
           attach="material"

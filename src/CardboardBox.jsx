@@ -10,11 +10,14 @@ import { useRef } from 'react';
 export default function CardboardBox(props) {
   // const model = useLoader(GLTFLoader, '/cardboard/cardboard_box_01_4k.gltf');
   const { nodes, materials } = useGLTF('/cardboard/cardboard_box_01_4k.gltf');
+  const model = useLoader(GLTFLoader, '/hammer/wooden_hammer_01_2k.gltf');
   const boxRef = useRef();
   // console.log('Cardboard box nodes: ', model.nodes);
   return (
     <>
-      <Suspense fallback={<LoadingState />}>
+      <Suspense 
+        fallback={<LoadingState />}
+      >
         <group
           {...props}
           dispose={null} 
@@ -51,6 +54,16 @@ export default function CardboardBox(props) {
             position-y={-0.45}
             position-x={-1.6}
             rotation-y={0.9}
+          />
+          <primitive 
+            object={model.scene} 
+            position-y={0.29}
+            scale={4.5}
+            position-x={-1.85}
+            position-z={-0.5}
+            rotation-x={1.65}
+            rotation-y={3.08}
+            rotation-z={-1.4}
           />
         </group>
       </Suspense>

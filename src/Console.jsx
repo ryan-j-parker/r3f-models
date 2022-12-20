@@ -12,8 +12,8 @@ export default function Console() {
     <group
       ref={consoleRef}
       dispose={null}
-      rotation-y={1.6}
-      position-x={-6}
+      rotation-y={1.57}
+      position-x={-7}
       position-y={-2}
       position-z={1.2}
       scale={2.6}

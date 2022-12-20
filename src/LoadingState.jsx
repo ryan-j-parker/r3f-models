@@ -11,14 +11,15 @@ export default function LoadingState() {
       // distanceFactor={10}
       // opacity={1}
       style={{
-        color: 'purple',
-        fontSize: '1.5rem',
+        // color: 'purple',
+        // fontSize: '1.5rem',
         fontWeight: 'bold',
-        textAlign: 'center',
+        // textAlign: 'center',
+        width: '50vw',
       }}
     >
-      {/* {progress}% */}
-      <Loader />
+      {progress}%
+      {/* <Loader /> */}
     </Html>
   );
 }

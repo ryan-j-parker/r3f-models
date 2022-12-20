@@ -21,7 +21,7 @@ export default function Sofa(props) {
       position-y={-1.99}
       position-z={-4}
       rotation-y={0.5}
-      scale={3.9}
+      scale={4.6}
     >
       <mesh
         name="sofaBase" 
