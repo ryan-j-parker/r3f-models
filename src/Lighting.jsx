@@ -5,6 +5,7 @@ export default function Lighting(props) {
   const spotRef = useRef();
   const pinkRef = useRef();
   const blueRef = useRef();
+  const yellowRef = useRef();
 
   return (
     <>
@@ -25,6 +26,15 @@ export default function Lighting(props) {
           position={[-8, 2, 12]}
           angle={-0.4}
           color={'#002fff'}
+          penumbra={2}
+          castShadow
+        />
+        <spotLight
+          ref={yellowRef}
+          intensity={0.5}
+          position={[-5, 2, 14]}
+          angle={-0.4}
+          color={'#fff000'}
           penumbra={2}
           castShadow
         />

@@ -10,6 +10,7 @@ import Console from '../Console';
 import Floor from '../Floor';
 import Lighting from '../Lighting';
 import Painting from '../Painting';
+import Postcard from '../Postcard';
 import PottedHerb from '../PottedHerb';
 import Sofa from '../Sofa';
 import Spaceship from '../Spaceship';
@@ -39,6 +40,7 @@ export default function Room() {
           <PottedHerb />
           <CardboardBox />
           {/* <Ceiling /> */}
+          <Postcard />
           <Walls />
           <Painting />
           <CeilingLight />

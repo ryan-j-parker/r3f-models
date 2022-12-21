@@ -56,7 +56,7 @@ export default function Experience() {
         {/* <hemisphereLight args={['#ec17ff', '#03da47', 4]} position={[-3, 0, -2]} /> */}
         {/* <OrbitControls /> */}
         {/* <MapControls /> */}
-        <OrbitControls />
+        <TrackballControls />
       </Suspense>
     </Canvas>
   );
