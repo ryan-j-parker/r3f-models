@@ -1,53 +1,23 @@
-# Alchemy React Base Template
+# "Moving Day" 
+>### a 3D representation of the first day in a new place.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Built in [React](https://github.com/facebook/react) with [Three.js](https://github.com/mrdoob/three.js/), [React Three Fiber](https://github.com/pmndrs/react-three-fiber), and [Drei](https://github.com/pmndrs/drei).
+> <b>Check out the <em>[Poimandres](https://github.com/pmndrs)</em> dev collective, they build incredibly useful Three.js tools!</b>
+#### HDRI environment map and GLTF models sourced from https://polyhaven.com and https://sketchfab.com
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+<b>Special thanks to the following asset creators:</b>
+>- [Andreas Mischok](https://polyhaven.com/all?a=Andreas%20Mischok)
+>- [Rahul Chaudhary](https://polyhaven.com/all?a=Rahul%20Chaudhary)
+>- [Rico Cilliers](https://polyhaven.com/all?a=Rico%20Cilliers)
+>- [James Ray Cock](https://polyhaven.com/all?a=James%20Ray%20Cock)
+>- [Kirill Sannikov](https://polyhaven.com/all?a=Kirill%20Sannikov)
+>- [Rob Tuytel](https://polyhaven.com/all?a=Rob%20Tuytel)
+>- [Dimitrios Savva](https://polyhaven.com/all?a=Dimitrios%20Savva)
+>- [Rajil Jose Macatangay](https://polyhaven.com/all?a=Rajil%20Jose%20Macatangay)
+>- [Fernando Quinn](https://polyhaven.com/all?a=Fernando%20Quinn)
+>- [Jurita Burger](https://polyhaven.com/all?a=Jurita%20Burger)
+>- [Scritta](https://sketchfab.com/scritta)
 
-- `npm install`
-- `npm start`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-## The Golden Rule: 
-
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
-
-## Making a plan in React
-1) Make a drawing of your app. Simple "wireframes" 
-1) Component Tree
-    1) Look at the drawing and break it down into Components. Label these Components explicitly (i.e., DogList, etc)
-    1) Draw a hierarchy (or tree) of components, describing which components are parents and which are children 
-    1) Looking at the drawing, make a list of your app's features. What should a user "be able to do" with this app?
-    1) Now look at your component tree: which components "go with" which features? Draw lines and make these connections explicitly.
-1) State
-    1) Look back at the drawing and your list of features and imagine using the app. What _state_ do you need to track? 
-    1) For each piece of state, ask: "When does it change?" If the answer is, "never", then it is not state.
-    1) Similarly, find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What state changes?" for each of these events. (This should feel like the the inverse of the previous step.)
-    1) Think about how to validate each of your state changes. How will I know if state changed in response to this event? (Hint: react dev tools or console.log usually helps here.)
-1) Data flow
-    1) Look at your hierarchy and ask: which components need access to which state? Another way to ask this is: for each component, what does this component need to "do its job?". This list becomes the "props" of the component.
-    1) If a child needs state from a parent, you will need to pass props. What will you name these props? 
-    1) Notice especially if two siblings need the same state: if so, you need a callback (i.e., debit card).
-1) Pick one feature from your list and build it out. Start with its parentmost component, and work down the component chain. Do not build another feature until this one is finished (and you can prove that it is finished by validating state change).
-
-## Additional considerations
-- Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
-- Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+### <em>Cardboard moving boxes lie stacked in a corner, with a hammer resting atop. You've just finished hanging your prized artwork on the walls, and you'll definitely put it back in the toolbox later. Where is that toolbox? On one wall is a Japanese woodblock-style print of a popular and timeless cat-based meme, and on the other is a collection of postcards. Also featuring cats. 
+#### A tiny spacecraft hovers in the corner for no reason at all, but you appreciate the ambience it adds to the space. You wonder if there are tiny aliens inside. The room is inexplicably lit by three powerful spotlights (also aliens?), casting blinding blue, pink, and yellow light over the sofa. Or couch. Or, if you're 150 years old, the "davenport." A loveseat maybe? Who names these things? 
+#### Further complicating the scene is an old-timey barber's chair, a curious addition, although a very bold choice in home decor, you think to yourself. On the console sits a marble bust of an anonymous olive enthusiast with sassy bangs, alongside a lantern from your lighthouse-keeping days. There's some foliage around too, harvested from the finest polyethylene orchards.</em>
