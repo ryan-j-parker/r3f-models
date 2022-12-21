@@ -1,6 +1,6 @@
 {
-  "short_name": "The First Day in Your New Place",
-  "name": "The First Day in Your New Place: a 3D room model built with R3F and Drei",
+  "short_name": "Moving Day",
+  "name": "Moving Day: a 3D room model built with R3F and Drei to simulate the first day in a new place.",
   "icons": [
     {
       "src": "r-fav.png",
