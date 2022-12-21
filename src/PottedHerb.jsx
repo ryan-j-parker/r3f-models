@@ -5,7 +5,7 @@ import React, { useRef } from 'react';
 export default function PottedHerb() {
   const { nodes, materials } = useGLTF('/potted-herb/potted_plant_01_4k.gltf');
   const herbRef = useRef();
-  console.log(nodes);
+
   return (
     <group
       ref={herbRef}
@@ -14,7 +14,7 @@ export default function PottedHerb() {
       position-x={-6.2}
       position-z={-6}
       rotation-y={2.2}
-      scale={5.5}
+      scale={6.75}
     >
       <mesh
         castShadow

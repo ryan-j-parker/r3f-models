@@ -2,18 +2,18 @@
 
 import React, { Suspense } from 'react';
 import { useRef } from 'react';
-import AssetsLoading from './AssetsLoading';
-import Barber from './Barber';
-import CardboardBox from './CardboardBox';
-import Console from './Console';
-import Floor from './Floor';
-import Lighting from './Lighting';
-import LoadingState from './LoadingState';
-import Painting from './Painting';
-import PottedHerb from './PottedHerb';
-import Sofa from './Sofa';
-import Spaceship from './Spaceship';
-import Walls from './Walls';
+import AssetsLoading from '../AssetsLoading';
+import Barber from '../Barber';
+import CardboardBox from '../CardboardBox';
+import CeilingLight from '../CeilingLight';
+import Console from '../Console';
+import Floor from '../Floor';
+import Lighting from '../Lighting';
+import Painting from '../Painting';
+import PottedHerb from '../PottedHerb';
+import Sofa from '../Sofa';
+import Spaceship from '../Spaceship';
+import Walls from '../Walls';
 
 export default function Room() {
   const roomRef = useRef();
@@ -24,10 +24,10 @@ export default function Room() {
         <group 
           ref={roomRef} 
           dispose={null} 
-          position={[0, -4.5, 1]} 
+          position={[2, -4.5, 2]} 
           scale={1.3} 
           rotation-x={-0.1}
-          rotation-y={-0.2} 
+          rotation-y={-0.6} 
           rotation-z={0.1}
         >
           <Spaceship />
@@ -38,8 +38,10 @@ export default function Room() {
           <Lighting />
           <PottedHerb />
           <CardboardBox />
+          {/* <Ceiling /> */}
           <Walls />
           <Painting />
+          <CeilingLight />
         </group>
       </Suspense>
     </>

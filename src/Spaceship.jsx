@@ -5,9 +5,8 @@ import React from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 export default function Spaceship(props) {
-  const { nodes, materials } = useGLTF('/spaceship/scene.gltf');
+  // const { nodes, materials } = useGLTF('/spaceship/scene.gltf');
   const model = useLoader(GLTFLoader, '/spaceship/scene.gltf');
-  console.log(model, model.nodes);
 
   return (
     <group 

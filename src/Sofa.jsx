@@ -7,9 +7,7 @@ import CoffeeTable from './CoffeeTable';
 import LoadingState from './LoadingState';
 
 export default function Sofa(props) {
-  //   const model = useLoader(GLTFLoader, '/sofa/sofa_02_4k.gltf');
   const { nodes, materials } = useGLTF('/sofa/sofa_02_4k.gltf');
-  //   console.log('Sofa nodes: ', model.nodes);
   const sofaRef = useRef();
 
   return (

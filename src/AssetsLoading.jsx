@@ -6,27 +6,17 @@ export default function AssetsLoading() {
 
   return (
     <Html
-    // //   center
-    //   as="div"
-    //   style={{
-    //     color: 'white',
-    //     fontSize: '2rem',
-    //     fontWeight: 'bold',
-    //     // textAlign: 'center',
-    //     position: 'absolute',
-    //     backgroundColor: 'grey',
-    //     borderRadius: '25%',
-    //     padding: '1.5vh 1.5vw',
-    //     // top: '50%',
-    //     // left: '50%',
-    //     // transform: 'translate(-50%, -50%)',
-    //     opacity: 0.5,
-    //   }}
+      center
+      as="div"
+      style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold',
+        textAlign: 'center',
+      }}
     >
-      {/* //   {/* Assets loading...
-    //   <br />
-    //   {progress}% */}
-      <Loader />
+      {progress === 100 ? 'Finishing up...' : 'Assets loading...'}
+      <br />
+      {progress}%
     </Html>
   );
 }

@@ -8,12 +8,12 @@ export default function Lighting(props) {
 
   return (
     <>
-      <group {...props} ref={spotRef}>
+      <group {...props} ref={spotRef} dispose={null}>
         <spotLight
           ref={pinkRef}
-          intensity={2}
-          position={[6, 3, 4]}
-          angle={0.8}
+          intensity={2.5}
+          position={[-8, 3, 9]}
+          angle={-0.2}
           color={'#ff008c'}
           penumbra={4}
           castShadow
@@ -21,8 +21,8 @@ export default function Lighting(props) {
         />
         <spotLight
           ref={blueRef}
-          intensity={4}
-          position={[-8, 5, -5]}
+          intensity={2.5}
+          position={[-8, 2, 12]}
           angle={-0.4}
           color={'#002fff'}
           penumbra={2}

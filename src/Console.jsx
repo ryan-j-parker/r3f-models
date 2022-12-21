@@ -29,3 +29,5 @@ export default function Console() {
     </group>
   );
 }
+
+useGLTF.preload('/console/ClassicConsole_01_4k.gltf');

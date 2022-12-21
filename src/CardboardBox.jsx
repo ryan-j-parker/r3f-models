@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unknown-property */
-
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Suspense } from 'react';
@@ -8,11 +7,10 @@ import { Clone, useGLTF } from '@react-three/drei';
 import { useRef } from 'react';
 
 export default function CardboardBox(props) {
-  // const model = useLoader(GLTFLoader, '/cardboard/cardboard_box_01_4k.gltf');
   const { nodes, materials } = useGLTF('/cardboard/cardboard_box_01_4k.gltf');
   const model = useLoader(GLTFLoader, '/hammer/wooden_hammer_01_2k.gltf');
   const boxRef = useRef();
-  // console.log('Cardboard box nodes: ', model.nodes);
+
   return (
     <>
       <Suspense 
@@ -72,24 +70,3 @@ export default function CardboardBox(props) {
 }
 
 useGLTF.preload('/cardboard/cardboard_box_01_4k.gltf');
-
-// import React, { useRef } from 'react';
-// import { useGLTF } from '@react-three/drei';
-
-// export function CardboardBox(props) {
-//   const { nodes, materials } = useGLTF('/cardboard.gltf');
-//   return (
-//     <group {...props} dispose={null}>
-//       <mesh
-//         castShadow
-//         receiveShadow
-//         geometry={nodes.cardboard.geometry}
-//         material={nodes.cardboard.material}
-//         position={[0, 0.2, 0]}
-//         userData={{ name: 'cardboard' }}
-//       />
-//     </group>
-//   );
-// }
-
-// useGLTF.preload('/cardboard/cardboard_box_01_4k.gltf');
