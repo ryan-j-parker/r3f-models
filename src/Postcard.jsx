@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import { useGLTF } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -23,3 +24,4 @@ export default function Postcard() {
 
   );
 }
+useGLTF.preload('/postcard/postcard_set_01_2k.gltf');

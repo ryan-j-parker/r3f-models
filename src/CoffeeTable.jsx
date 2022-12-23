@@ -18,12 +18,13 @@ export default function CoffeeTable(props) {
       scale={0.8}
       position-z={1.2}
     >
-      <mesh
+      {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.CoffeeTable_01.geometry}
         material={nodes.CoffeeTable_01.material}
-      />
+      /> */}
+      <primitive object={model.scene} />
       <Plant position-y={0.526} />
     </group>
     // <Suspense fallback={<LoadingState />}>

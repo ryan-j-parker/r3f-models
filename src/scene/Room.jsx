@@ -36,7 +36,7 @@ export default function Room() {
           <Console />
           <Barber />
           <Floor />
-          <Lighting />
+          {/* <Lighting /> */}
           <PottedHerb />
           <CardboardBox />
           {/* <Ceiling /> */}

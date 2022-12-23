@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import { useGLTF } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -21,3 +22,4 @@ export default function Painting() {
     </group>
   );
 }
+useGLTF.preload('/painting/fancy_picture_frame_01_4k.gltf');

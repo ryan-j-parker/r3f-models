@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import { useGLTF } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber';
 import React from 'react';
 import { useRef } from 'react';
@@ -27,3 +28,5 @@ export default function CeilingLight() {
     </>
   );
 }
+
+useGLTF.preload('/ceiling-light/modern_ceiling_lamp_01_4k.gltf');

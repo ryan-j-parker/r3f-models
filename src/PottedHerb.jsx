@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from '@react-three/drei';
+import { useLoader } from '@react-three/fiber';
 import React, { useRef } from 'react';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 export default function PottedHerb() {
   const { nodes, materials } = useGLTF('/potted-herb/potted_plant_01_4k.gltf');
   const herbRef = useRef();
+  const model = useLoader(GLTFLoader, '/potted-herb/potted_plant_01_4k.gltf');
 
   return (
     <group
@@ -16,7 +19,8 @@ export default function PottedHerb() {
       rotation-y={2.2}
       scale={6.75}
     >
-      <mesh
+      <primitive object={model.scene} />
+      {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.potted_plant_01_stem.geometry}
@@ -39,7 +43,8 @@ export default function PottedHerb() {
         receiveShadow
         geometry={nodes.potted_plant_01_leaves.geometry}
         material={nodes.potted_plant_01_leaves.material}
-      />
+      /> */}
     </group>
   );
 }
+useGLTF.preload('/potted-herb/potted_plant_01_4k.gltf');

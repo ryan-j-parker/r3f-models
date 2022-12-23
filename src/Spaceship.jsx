@@ -23,3 +23,4 @@ export default function Spaceship(props) {
     </group>
   );
 }
+useGLTF.preload('/spaceship/scene.gltf');

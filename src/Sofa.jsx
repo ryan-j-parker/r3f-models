@@ -8,6 +8,7 @@ import LoadingState from './LoadingState';
 
 export default function Sofa(props) {
   const { nodes, materials } = useGLTF('/sofa/sofa_02_4k.gltf');
+  const model = useLoader(GLTFLoader, '/sofa/sofa_02_4k.gltf');
   const sofaRef = useRef();
 
   return (
@@ -21,7 +22,7 @@ export default function Sofa(props) {
       rotation-y={0.5}
       scale={4.6}
     >
-      <mesh
+      {/* <mesh
         name="sofaBase" 
         castShadow 
         receiveShadow 
@@ -37,7 +38,8 @@ export default function Sofa(props) {
         material={nodes.sofa_02_Seat.material}
         scale={1.25}
         position-y={-0.025}
-      />
+      /> */}
+      <primitive object={model.scene} />
       <CoffeeTable />
     </group>
     // <Suspense fallback={<LoadingState />}>
